@@ -116,6 +116,11 @@ class mod_revealjs_mod_form extends moodleform_mod {
         $mform->setDefault('progress', 'true');
         $mform->addHelpButton('progress', 'progress', 'revealjs');
         
+        //slideNumber
+        $mform->addElement('select', 'slideNumber', get_string('slideNumber', 'revealjs'), $revealjs_true_false);
+        $mform->setDefault('slideNumber', 'true');
+        $mform->addHelpButton('slideNumber', 'slideNumber', 'revealjs');
+        
         //history
         $mform->addElement('select', 'history', get_string('history', 'revealjs'), $revealjs_true_false);
         $mform->setDefault('history', 'true');
