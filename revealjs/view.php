@@ -211,6 +211,9 @@ $revealjs->presentation = str_replace('src="_revealjs_/', 'src="'.$CFG->wwwroot.
         // Transition style for full page backgrounds
         backgroundTransition: '<?php echo $revealjs->backgroundtransition ?>', // default/linear/none
         
+        // Display the page number of the current slide
+        slideNumber: '<?php echo $revealjs->slideNumber ?>',
+        
         // Optional libraries used to extend on reveal.js
         dependencies: [
             { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
